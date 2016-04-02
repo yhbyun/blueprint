@@ -214,7 +214,7 @@ class Blueprint
             $contents .= sprintf('+ %s', $attribute->identifier);
 
             if ($attribute->sample) {
-                $contents .= sprintf(': %s', $attribute->sample);
+                $contents .= sprintf(': `%s`', $attribute->sample);
             }
 
             $contents .= sprintf(
